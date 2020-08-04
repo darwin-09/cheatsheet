@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS | Cheatsheet </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- <figure>
+            <img src="./assets/LOGO.svg" alt="webpage logo">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main>
+        <section>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3" class="headings text-center full-width">Form Elements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="headings">Element</th>
+                        <th class="headings">Usage</th>
+                        <th class="headings">Example Code</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            &lt;form&gt;
+                        </td>
+                        <td class="p-20px">
+                            The HTML &lt;form&gt; element is used to collect and send information to an external source.<br/>
+                            &lt;form&gt; can contain various input elements. When a user submits the form, information in 
+                            these input elements is passed to the source which is named in the action attribute of the form.
+                        </td>
+                        <td class="text-left p-20px code-block">
+                            <code>
+                                &lt;form method="post" action="http://server1"&gt; <br/>
+                                    Enter your name: <br/>
+                                    &lt;input type="text" name="fname"&gt;  <br/>
+                                    &lt;br/&gt; <br/>
+                                    Enter your age:  <br/>
+                                    &lt;input type="text" name="age"&gt;  <br/>
+                                    &lt;br/&gt; <br/> 
+                                    &lt;input type="submit" value="Submit"&gt; <br/>
+                                &lt;form&gt;
+                            </code>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td class="p-20px">
+                            The HTML &lt;input&gt; element is used to render a variety of input fields on a webpage including text fields, checkboxes, buttons, etc.
+                            &lt;input&gt; element have a type attribute that determines how it gets rendered to a page.
+                            
+                        </td>
+                        <td class="text-left p-20px code-block">
+                            <code>
+                                &lt;label for="fname"&gt;First name:&lt;/label&gt; <br/>
+                                &lt;input type="text" name="fname" id="fname"&gt;&lt;br/&gt; <br/>
+
+                                &lt;input type="checkbox" name="vehicle" value="Bike"&gt; I own a bike
+                             
+                            </code>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td class="p-20px">
+                            The HTML &lt;label&gt; element provides identification for a specific &lt;input&gt; based on matching values of the &lt;input&gt;‘s id attribute and the &lt;label&gt;‘s for attribute. By default, clicking on the &lt;label&gt; will focus the field of the related &lt;input&gt;. <br/> <br/>                             
+                            The example code will create a text input field with the label text “Password: “ next to it. Clicking on “Password: “ on the page will focus the field for the related &lt;input&gt;.  
+                        </td>
+                        <td class="text-left p-20px code-block">
+                            <code>
+                                &lt;label for="password ">Password:&gt;&lt;/label&gt;
+                                &lt;type="text" id="password" name="password"&gt;
+                            </code>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td class="p-20px">
+                            The HTML &lt;select&gt; element can be used to create a dropdown list. A list of choices for the dropdown list can be created using one or more &lt;option&gt; elements. By default, only one &lt;option&gt; can be selected at a time. <br/><br/>
+                            The value of the selected &lt;select&gt;'s name and the &lt;option&gt;’ s value attribute are sent as a key-value pair when the form is submitted.
+                        </td>
+                        <td class="text-left p-20px code-block">
+                            <code>
+                                &lt;select name="rental-option"&gt;<br/>
+                                    <div class="pl-10px">
+                                        &lt;option&gt; value="small">Small &lt;/option&gt; <br/>
+                                        &lt;option&gt; value="family">Family Sedan&lt;/option&gt; <br/>
+                                        &lt;option&gt; value="lux">Luxury &lt;/option&gt; <br/> 
+                                    </div>
+                                 &lt;select&gt;
+                            </code>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td class="p-20px">
+                            When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an &lt;input&gt; with a &lt;datalist&gt;. To pair a &lt;input&gt; with a &lt;datalist&gt; the &lt;input&gt;’s list value must match the value of the id of the &lt;datalist&gt;. The datalist element is used to store a list of &lt;option&gt;s.<br/><br/>
+                            The list of data is shown as a dropdown on an input field when a user clicks on the input field. As the user starts typing, the list will be updated to show elements that best match what has been typed into the input field. The actual list items are specified as multiple option elements nested inside the datalist.<br/><br/>                              
+                            datalists are ideal when providing users a list of pre-defined options, but to also allow them to write alternative inputs as well.<br/>                           
+                        </td>
+                        <td class="text-left p-20px code-block">
+                            <code>                       
+                                &lt;input list="ide"&gt; <br/>  <br/>
+                                
+                                &lt;datalist id="ide"&gt; <br/>
+                                    <div class="pl-10px">
+                                        &lt;option value="Visual Studio Code" /&gt; <br/>
+                                        &lt;option value="Atom"  /&gt; <br/>
+                                        &lt;option value="Sublime Text"  /&gt; <br/>
+                                    </div>
+                                &lt;/datalist&gt;
+                            </code>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td class="p-20px">
+                            The textarea element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the rows and cols attributes which determine the height and width, respectively, of the element.<br/><br/>
+                            When rendered by the browser, textarea fields can be stretched/shrunk in size by the user, but the rows and cols attributes determine the initial size.<br/><br/>
+                            Unlike the input element, the &lt;textarea&gt; element has both opening and closing tags. The value of the element is the content in between these tags (much like a &lt;p&gt; element). The code block shows a &lt;textarea&gt; of size 10x30 and with a name of "comment".       
+                        </td>
+                        <td class="text-left p-20px code-block">
+                            <code>
+                                &lt;textarea rows="10" cols="30" name="comment"&gt;&lt;/textarea&gt;
+                            </code>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

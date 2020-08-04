@@ -1,0 +1,63 @@
+/* typeface */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.headings {
+    text-transform: uppercase;
+    
+    font-weight: bold;
+    font-size: large;
+}
+
+/* scaling */
+
+.pl-20px {
+    padding-left: 20px;
+}
+
+.pl-10px {
+    padding-left: 10px;
+}
+
+.px-20px {
+    padding: 0 20px
+}
+
+.p-20px {
+    padding: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* color */ 
+
+.code-block {
+    background-color: #0a0e1d;
+    color: white;
+}
+
+/* tags */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(red,yellow);
+}
+
+th, td {
+    width: 33.3%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
